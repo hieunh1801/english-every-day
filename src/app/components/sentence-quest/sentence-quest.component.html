@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Sentences Quest</h1>
+  <div class="vi-sentence">
+    {{ sentence?.vietnamese }}
+  </div>
+  <form [formGroup]="questForm">
+    <input
+      class="input"
+      name="sentence in english"
+      [placeholder]="sentence?.english"
+      formControlName="sentence"
+      (keydown.enter)="onEnter()"
+      autocomplete="off"
+      autofill="off"
+    />
+  </form>
+  <div
+    class="en-sentence"
+    [ngClass]="{
+      correct: checkResult === true,
+      wrong: checkResult === false
+    }"
+  >
+    {{ sentence?.english }}
+  </div>
+</div>

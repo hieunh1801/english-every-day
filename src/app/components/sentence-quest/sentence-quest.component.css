@@ -1,0 +1,50 @@
+.container {
+  max-width: 700px;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.input {
+  width: 500px;
+  padding: 12px 20px;
+  border: solid 1px #ccc;
+  border-radius: 0px !important;
+  outline: none;
+}
+
+.input:focus {
+  border-radius: 1px;
+  border-radius: 0px !important;
+}
+
+.vi-sentence {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-top: 10px;
+  font-family: "Roboto";
+  align-items: center;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.en-sentence {
+  padding: 10px 20px;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+
+.correct {
+  color: #0fa573;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.wrong {
+  color: #e60023;
+  opacity: 1;
+  transform: scale(1.1);
+}
